@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  dllmain.cpp
+  NativeAudioApi.cpp
+  Generating Code...
+     Creating library C:\Users\meani\source\repos\Sonic_Tracker\x64\Debug\SonicTracker.NativeAudio.lib and object C:\Users\meani\source\repos\Sonic_Tracker\x64\Debug\SonicTracker.NativeAudio.exp
+  SonicTracker.NativeAudio.vcxproj -> C:\Users\meani\source\repos\Sonic_Tracker\x64\Debug\SonicTracker.NativeAudio.dll
