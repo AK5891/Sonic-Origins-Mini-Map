@@ -27,7 +27,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="Assets\Audio\**\*.wav">
+		<Content Include="Assets\Audio\**\*.wav"
+				 Exclude="Assets\Audio\Sonic1\Zones\**\*.wav;
+						  Assets\Audio\Sonic2\Zones\**\*.wav;
+						  Assets\Audio\Sonic1\Misc\Boss.wav;
+						  Assets\Audio\Sonic1\Misc\Invincibility.wav;
+						  Assets\Audio\Sonic2\Misc\Boss.wav;
+						  Assets\Audio\Sonic2\Misc\FInalBoss.wav;
+						  Assets\Audio\Sonic2\Misc\Invincibility.wav;
+						  Assets\Audio\Sonic2\Misc\SuperSonic.wav">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 
