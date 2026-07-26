@@ -1,0 +1,13 @@
+.vs/
+.agents/
+
+**/bin/
+**/obj/
+**/x64/
+**/SonicTra.*/
+
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+

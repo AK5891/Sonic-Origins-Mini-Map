@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+
+		<PlatformTarget>x64</PlatformTarget>
+		<Platforms>x64</Platforms>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<Product>Sonic Tracker</Product>
+		<Description>Live map and object tracker for the Sonic Origins collection.</Description>
+		<Copyright>Copyright © 2026 Sonic Tracker contributors</Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SoundFingerprinting" Version="15.7.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Assets\Maps\**\*.png" />
+		<Resource Include="Assets\Images\**\*.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Assets\Audio\**\*.wav">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Assets\Maps\SonicCD\" />
+	  <Folder Include="Assets\Maps\Sonic3K\" />
+	  <Folder Include="Assets\Maps\Sonic1\" />
+	</ItemGroup>
+
+	<Target Name="CopyNativeAudioDll" AfterTargets="Build">
+		<PropertyGroup>
+			<NativeAudioProjectDllPath>
+				$(MSBuildProjectDirectory)\..\SonicTracker.NativeAudio\x64\$(Configuration)\SonicTracker.NativeAudio.dll
+			</NativeAudioProjectDllPath>
+			<NativeAudioSolutionDllPath>
+				$(MSBuildProjectDirectory)\..\x64\$(Configuration)\SonicTracker.NativeAudio.dll
+			</NativeAudioSolutionDllPath>
+			<NativeAudioDllPath Condition="Exists('$(NativeAudioProjectDllPath)')">
+				$(NativeAudioProjectDllPath)
+			</NativeAudioDllPath>
+			<NativeAudioDllPath Condition="'$(NativeAudioDllPath)' == '' and Exists('$(NativeAudioSolutionDllPath)')">
+				$(NativeAudioSolutionDllPath)
+			</NativeAudioDllPath>
+		</PropertyGroup>
+
+		<Copy SourceFiles="$(NativeAudioDllPath)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" Condition="'$(NativeAudioDllPath)' != ''" />
+	</Target>
+
+</Project>
