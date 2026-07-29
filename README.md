@@ -13,8 +13,8 @@ The tracker currently supports:
 
 It also includes character-specific player icons, automatic map switching, audio-based recognition for screens that cannot be identified reliably through level memory alone, zoomable and draggable map navigation, manual overrides, Sonic 3 & Knuckles Giant Ring tracking, and Sonic CD Past-object tracking.
 
-> **IMAGE PLACEHOLDER — Main application screenshot**
-> Add a screenshot showing the tracker connected to Sonic Origins, with a level map and character icon visible.
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/MinimapOverall.png" alt="Alt text" width="1000">   
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/GameOverall.png" alt="Alt text" width="1000">   
 
 ---
 
@@ -68,16 +68,21 @@ The finished application is a Windows desktop companion built specifically for S
 
 During normal play, the map camera follows the character. The user can zoom in for a closer view, zoom out until the entire stage is visible, or drag the map to examine an area away from the character. A recenter button returns the view to the character and restores the standard zoom.
 
+> **Minimum Zoom**
+> <img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/MinimapMinZoom.png" alt="Alt text" width="1000">   
+
+> **Maximum Zoom**
+> <img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/MinimapFullZoom.png" alt="Alt text" width="1000">   
+
+>**In Game**
+><img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/GameZoomDemo.png" alt="Alt text" width="1000">  
+
+
 When the player is not in a conventional stage, the map is replaced by a clearly labeled placeholder display. This is used for states such as the Sonic Origins menu, title screens, Special Stages, Sonic 3 & Knuckles bonus stages, and Level Select. The appropriate game logo is shown so that the tracker never presents an unrelated stage map while the player is elsewhere.
 
-> **IMAGE PLACEHOLDER — Full map view**
-> Add a screenshot showing a complete stage at minimum zoom.
 
-> **IMAGE PLACEHOLDER — Follow-camera view**
-> Add a screenshot showing a close zoom with the character icon centered.
-
-> **IMAGE PLACEHOLDER — Placeholder screen**
-> Add a screenshot of the Sonic Origins menu, title-screen, or Special Stage placeholder.
+> **Sonic Origins Menu**
+> <img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/TitleScreen.png" alt="Alt text" width="1000">  
 
 ---
 
@@ -119,6 +124,13 @@ Audio fingerprint recognition identifies important non-level states when scene m
 
 Known Giant Ring positions are stored in a dedicated registry and drawn as overlays on supported maps. When the character enters the configured interaction radius around a ring, its overlay disappears for the current visit to the map.
 
+#### Before
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/BigRing1.png" alt="Alt text" width="1000">   
+
+#### After
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/BigRing2.png" alt="Alt text" width="1000">   
+
+
 ### Sonic CD Past-object tracking
 
 Past versions of Sonic CD stages can display overlays for:
@@ -127,6 +139,15 @@ Past versions of Sonic CD stages can display overlays for:
 - Robot transporters
 
 The overlays disappear when the character reaches the corresponding object location, creating a lightweight visual record of the objects encountered during the current visit.
+
+#### Before
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/Generator1Game.png" alt="Alt text" width="1000">   
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/Generator1Map.png" alt="Alt text" width="1000">   
+
+#### After
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/Generator2Game.png" alt="Alt text" width="1000">   
+<img src="https://github.com/AK5891/Sonic-Origins-Mini-Map/blob/main/demo/Generator2Map.png" alt="Alt text" width="1000">   
+
 
 ### Manual map override
 
