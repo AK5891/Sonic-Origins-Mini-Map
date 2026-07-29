@@ -785,20 +785,12 @@ For map corrections, include at least one clearly identified point with both the
 
 ## Credits and sources
 
-> **CREDITS PLACEHOLDER — Project contributors**
-> Add the names or usernames of the project creator, code contributors, testers, researchers, and documentation contributors.
+> [Sonic Galaxy](https://www.sonicgalaxy.net/maps/) for Sonic 2 and CD maps
 
-> **SOURCES PLACEHOLDER — Level maps**
-> List the original source for every map collection, including creator names, website links, archive links, and any applicable usage terms.
+>[Sonic Retro](https://sonicretro.org/) for Sonic 3K maps
 
-> **SOURCES PLACEHOLDER — Audio references**
-> List the sources used to create recognition samples and document any editing or conversion performed.
+>[Rayden](https://steamcommunity.com/sharedfiles/filedetails/?id=2488962511) for Sonic 1 maps
 
-> **SOURCES PLACEHOLDER — Icons and logos**
-> List the source and creator of each character icon, game logo, Giant Ring image, Sonic CD object image, and application icon.
-
-> **ACKNOWLEDGEMENTS PLACEHOLDER**
-> Add communities, technical references, reverse-engineering documentation, testing assistance, and other resources that materially supported development.
 
 ### Third-party software
 
